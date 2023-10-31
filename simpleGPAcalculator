@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int ders;
+    cout << "kac dersiniz var" << endl;
+    cin >> ders;
+    int toplam = 0;
+    if(ders > 0){
+        for(int i=1; i<=ders; i++){
+            int score;
+            cout << i << ". ders notunuzu giriniz"<< endl;
+            cin >> score;
+            toplam += score;
+        }
+        float ortalama = static_cast<float>(toplam) / ders; // Ortalamayı kesirli bir sayı olarak hesaplamasi icin float kullandik static_cast is tur donusum icin bu sayede ondalik kismida ekrana yzdirabilecegiz
+        cout << "Ortalamaniz :" << ortalama << endl;
+    }
+    else
+        cout << "ders sayinizi girmediniz" << endl;
+    return 0;
+}
