@@ -13,8 +13,8 @@ int main()
             cin >> score;
             toplam += score;
         }
-        float ortalama = static_cast<float>(toplam) / ders; // Ortalamayı kesirli bir sayı olarak hesaplamasi icin float kullandik static_cast is tur donusum icin bu sayede ondalik kismida ekrana yzdirabilecegiz
-        cout << "Ortalamaniz :" << ortalama << endl;
+        float ortalama = static_cast<float>(toplam) / ders; // Ortalamayı kesirli bir sayı olarak hesaplamasi icin float kullandik 
+        cout << "Ortalamaniz :" << ortalama << endl;        //static_cast ise tur donusum icin bu sayede ondalik kismida ekrana yzdirabilecegiz
     }
     else
         cout << "ders sayinizi girmediniz" << endl;
